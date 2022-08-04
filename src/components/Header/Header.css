@@ -1,0 +1,11 @@
+header {
+  width: 95%;
+  margin: 0 auto;
+  font-family: "Mouse Memoirs", sans-serif;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+}

@@ -1,0 +1,24 @@
+.Beer {
+  /* background-color: #fff; */
+  padding: 2rem;
+}
+
+.Beer__images {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+}
+
+.Beer__images img {
+  width: 30%;
+}
+
+.Beer__content {
+
+}
+
+.Beer__content h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.4rem;
+  margin: 20px 0px 12px 0px;
+}
