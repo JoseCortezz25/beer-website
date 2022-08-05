@@ -1,0 +1,86 @@
+.BeerDetails {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.BeerDetails__image {
+  width: 40%;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.BeerDetails__image img {
+  height: 100%;
+}
+
+.BeerDetails__specifics {
+  background-color: #ffe5c2;
+  width: 100%;
+  padding: 12px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  margin: 10px 0px 10px 0px;
+}
+
+.BeerDetails__content {
+  width: 60%;
+  height: 80vh;
+  padding: 0rem 5rem 0rem 5rem;
+  overflow-y: scroll;
+}
+
+.BeerDetails__content::-webkit-scrollbar {
+  display: none;
+}
+
+.BeerDetails__content h1 {
+  font-size: 4rem;
+}
+
+.BeerDetails__content .tagline {
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.BeerDetails__content h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 2.2rem;
+  margin-bottom: 1.7rem;
+}
+
+.BeerDetails__content h2 {
+  font-size: 2.3rem;
+}
+.BeerDetails__content h3 {
+  font-size: 1.7rem;
+}
+
+.FoodPairing {
+  margin-left: 23px;
+}
+
+.SlotIngredient {
+  background-color: #fff2e0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  padding: 10px 13px;
+}
+
+.SlotIngredient span p:first-child {
+  font-weight: bold;
+}
+
+.SlotIngredient span p:last-child {
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
