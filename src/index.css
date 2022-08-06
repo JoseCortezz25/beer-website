@@ -28,8 +28,12 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
-  display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* gap: 2rem; */
-  /* border: 1px solid blue; */
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
 }

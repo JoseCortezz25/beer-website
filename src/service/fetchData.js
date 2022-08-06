@@ -7,7 +7,13 @@ const config = {
 }
 
 export const getAllBeers = () => 
-  fetch(`${API}/beers`, config)
+  fetch(`${API}/beers?per_page=25`, config)
+    .then(response => response.json())
+    .then(data => data)
+    .catch(error => console.log(error));
+
+export const getBeersByPage = (page) => 
+  fetch(`${API}/beers?page=${page}&per_page=25`, config)
     .then(response => response.json())
     .then(data => data)
     .catch(error => console.log(error));
