@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getOneBeer } from "../../service/fetchData";
+import Loading from "../Loading/Loading";
 import "./BeerDetail.css";
 
 const BeerDetail = () => {
@@ -10,8 +11,6 @@ const BeerDetail = () => {
   useEffect(() => {
     getOneBeer(id).then((data) => setBeer(data[0]));
   }, []);
-
-  console.log(beer);
 
   return beer && beer.boil_volume ? (
     <section className="BeerDetails">
@@ -100,7 +99,7 @@ const BeerDetail = () => {
       </div>
     </section>
   ) : (
-    <p>Loading...</p>
+    <Loading />
   );
 };
 
