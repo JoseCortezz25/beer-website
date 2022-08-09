@@ -44,7 +44,7 @@ function App() {
       <BeerList beers={searchResults} />
       <div className="Pagination">
         <Link to={pathname.includes('/page/2') ? `/` : `/page/${page-1}`}><a><button>{"<"}</button></a></Link>
-        <Link to={pathname.includes('/') ? `/page/2` : `/page/${page+1}`}><a><button>{">"}</button></a></Link>
+        <Link to={pathname === '/' ? `/page/2` : `/page/${Number(page)+1}`}><a><button>{">"}</button></a></Link>
       </div>
     </div>
   );

@@ -24,6 +24,9 @@ const BeerDetail = () => {
           <b>First brewed:</b> {beer.first_brewed}
         </p>
         <p>
+          <b>Attenuation level:</b> {beer.attenuation_level}
+        </p>
+        <p>
           <b>Contributed by:</b> {beer.contributed_by}
         </p>
         <div className="BeerDetails__specifics">
